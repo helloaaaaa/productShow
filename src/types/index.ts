@@ -1,20 +1,20 @@
 export interface Product {
   id: number
   name: string
+  category: 'hat' | 'clothing'
   price: number
   originalPrice?: number
   image: string
-  category: string
   description: string
-  tags: string[]
   colors: string[]
-  sizes: string[]
-  rating: number
-  reviews: number
+  sizes?: string[]
+  isNew?: boolean
+  isHot?: boolean
+  stock: number
 }
 
 export interface Category {
-  id: number
+  id: string
   name: string
   icon: string
 }
